@@ -2,15 +2,15 @@ version: 2
 
 sources:
   - name: staging
-    database: taxi-rides-ny-339813-412521
+    database: dtc-de-course-412918
      # For postgres:
       #database: production
-    schema: trips_data_all
+    schema: ny_taxi_rides
 
       # loaded_at_field: record_loaded_at
     tables:
-      - name: green_tripdata
-      - name: yellow_tripdata
+      - name: green_trip_data
+      - name: yellow_trip_data
          # freshness:
            # error_after: {count: 6, period: hour}
 
